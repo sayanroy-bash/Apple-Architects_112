@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  max-width: 100vw;
+  height: 2000px;
+  margin: auto;
+  background-color: #fff5f4;
+}
+nav > div.header {
+  max-width: 1300px;
+  margin: auto;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+nav > div > img {
+  width: 290px;
+  height: 60px;
+}
+nav > div.header {
+  display: flex;
+  gap: 17.5rem;
+  align-items: center;
+}
+nav > div.header > div.nav-list-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+nav > div.header > div.nav-list-items > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav > div.header > div.nav-list-items > div > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 22px;
+}
+
+.nav-btn {
+  background-color: black;
+  color: #fff5f4;
+  width: 124px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.nav-btn:hover {
+  background-color: #3f2e88;
+  color: white;
+  transition: 1.2s;
+}
+
+svg {
+  margin-top: 5px;
+}
+
+nav > div.header > div.nav-list-items > div:hover {
+  color: linear-gradient(45deg, #f77b7f, #fad0c4);
+}
+
+nav > div.header > div.nav-list-items > div:hover svg {
+  transform: rotate(180deg);
+  color: #fa7164;
+}
+
+nav > div.header > div.nav-list-items > div:hover > a {
+  color: #fa7164;
+}
+
+header {
+  max-width: 1300px;
+  margin: auto;
+  height: 800px;
+  /* border: 1px solid green; */
+  margin-top: 100px;
+  background-color: #fff5f4;
+  position: relative;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header > h1 {
+  text-align: center;
+  color: rgb(78, 77, 77);
+  font-size: 17px;
+}
+
+header > h2 {
+  width: 700px;
+  text-align: center;
+  color: #3f2e88;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19rem;
+  margin-top: 30px;
+  line-height: 60px;
+}
