@@ -20,6 +20,53 @@
       h1::first-line {
         color: orange;
       }
+      .review-cards {
+        max-width: 1350px;
+        margin: auto;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 100%;
+        gap: 15px;
+        z-index: 1;
+      }
+      .review-cards > img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        z-index: 1;
+      }
+      .review-cards img:hover {
+        transform: scale(
+          1.1
+        ); /* Adjust the scale factor for desired zoom level */
+      }
+      .review-img1 {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* border: 1px solid green; */
+      }
+      .review-img2 {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 254px;
+      }
+      .review-img3 {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-top: 20px;
+        /* border: 1px solid green; */
+      }
+
+      .review-img4 {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 314px;
+        margin-top: 20px;
+      }
+      .review-img5,
+      .review-img6 {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 254px;
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
@@ -51,8 +98,17 @@
       </h1>
       <h1>N E W S <span style="font-size: 15px"> & </span> U P D A T E S</h1>
 
-      
-<a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-timezone="Asia/Kolkata" data-textcolor="#fffafa" data-date="2024-06-29 16:52" data-digitscolor="#ffffff" data-unitscolor="#fffcfc">Countdown Timer</a>
+      <a
+        href="https://logwork.com/countdown-timer"
+        class="countdown-timer"
+        data-style="columns"
+        data-timezone="Asia/Kolkata"
+        data-textcolor="#fffafa"
+        data-date="2024-06-29 16:52"
+        data-digitscolor="#ffffff"
+        data-unitscolor="#fffcfc"
+        >Countdown Timer</a
+      >
       <button type="submit" id="event"><h2>Book Now</h2></button>
     </header>
     <div class="benefits">
@@ -63,7 +119,38 @@
       <div><h1>Collaborating and new business skills</h1></div>
       <div><h1>New insights into emerging ideas</h1></div>
     </div>
-
+    <div class="review-cards">
+      <img
+        class="review-img1"
+        src="https://www.devgadhvi10x.com/hosted/images/e5/afe0c8b01441bbaabd1dac857d1a79/image1.jpg"
+        alt="reviews"
+      />
+      <img
+        class="review-img2"
+        src="https://www.devgadhvi10x.com/hosted/images/d9/71c24875a147b4b7b92541e62ed0bf/image2.jpg"
+        alt=""
+      />
+      <img
+        class="review-img3"
+        src="https://www.devgadhvi10x.com/hosted/images/99/077312d0c04735957a42b0d925ac62/image3.jpg"
+        alt=""
+      />
+      <img
+        class="review-img4"
+        src="https://www.devgadhvi10x.com/hosted/images/5c/da26c430464f308b5949fcb5a0b880/image4.jpg"
+        alt=""
+      />
+      <img
+        class="review-img5"
+        src="https://www.devgadhvi10x.com/hosted/images/22/491b220ffe445c96e636d9f63d62d6/image6.jpg"
+        alt=""
+      />
+      <img
+        class="review-img6"
+        src="https://www.devgadhvi10x.com/hosted/images/a1/673fa2fa6b441587304e41e0b2bdde/image5.jpg"
+        alt=""
+      />
+    </div>
     <main>
       <div class="container">
         <h1>RELATED POSTS</h1>
@@ -105,6 +192,7 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div class="container">
         <div id="bgcolor">
