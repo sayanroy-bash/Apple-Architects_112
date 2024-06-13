@@ -32,18 +32,19 @@ body {
   font-size: medium;
   padding: 8px 18px;
   color: white;
+  z-index: 1;
 }
 .header .nav-btn:hover {
-  cursor: grab;
+  background-color: #3f2e88;
+  color: white;
+  transition: 1.2s;
+  cursor: pointer;
 }
 
 header {
   max-width: 1300px;
   margin: auto;
-  height: 800px;
-  border: 1px solid green;
   z-index: 1000;
-  transition: background-color 0.3s ease;
 }
 header img {
   width: 100%;
@@ -52,5 +53,5 @@ header img {
 
 header > h1 {
   text-align: center;
-  color: rgb(78, 77, 77);
+  color: rgb(251, 251, 251);
 }/*# sourceMappingURL=styles.css.map */
