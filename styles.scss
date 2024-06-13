@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+// nav {
+//   margin: auto;
+//   > div.header {
+//     height: 100px;
+//     // border: 1px solid red;
+//   }
+//   > div > img {
+//     width: 20vw;
+//     height: 20vh;
+//     display: block;
+//   }
+//   > div.header {
+//     display: flex;
+//     gap: 17.5rem;
+//     align-items: center;
+//   }
+//   > div.header > div.nav-list-items {
+//     display: flex;
+//     align-items: center;
+//     gap: 2rem;
+//   }
+//   > div.header > div.nav-list-items > div {
+//     display: flex;
+//     align-items: center;
+//     gap: 4px;
+//   }
+// }
+
+// nav > div.header > div.nav-list-items > div > a {
+//   text-decoration: none;
+//   color: gray;
+//   font-size: 22px;
+// }
+// .nav-btn {
+//   background-color: black;
+//   color: #fff5f4;
+//   width: 124px;
+//   height: 50px;
+//   border-radius: 10px;
+//   margin-left: 8px;
+// }
+// .nav-btn:hover {
+//   background-color: #3f2e88;
+//   color: white;
+//   transition: 1.2s;
+// }
+// svg {
+//   margin-top: 5px;
+// }
+// nav > div.header > div.nav-list-items > div:hover {
+//   color: linear-gradient(45deg, #f77b7f, #fad0c4);
+// }
+
+// nav > div.header > div.nav-list-items > div:hover svg {
+//   transform: rotate(180deg);
+//   color: #fa7164;
+// }
+
+// nav > div.header > div.nav-list-items > div:hover > a {
+//   color: #fa7164;
+// }
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  img{
+    width: 8%;
+    height: 8%;
+    border-radius: 50%;
+  }
+  .nav-list-items{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  }
+  .nav-btn {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 8px 18px;
+    color: white;
+  }
+  .nav-btn:hover{
+    cursor: grab;
+  }
+}
+
+// header part
+header {
+  max-width: 1300px;
+  margin: auto;
+  height: 800px;
+  border: 1px solid green;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+header > h1 {
+  text-align: center;
+  color: rgb(78, 77, 77);
+}
+
