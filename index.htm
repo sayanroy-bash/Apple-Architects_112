@@ -1,880 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/abc5352ddd.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="style1.css" />
-  <style>
-    h1 {
-      color: aliceblue;
-      text-align: center;
-      font-weight: 100;
-      font-size: 100%;
-      width: 60%;
-      margin: auto;
-    }
-
-    h1::first-line {
-      color: orange;
-    }
-
-    .review-cards {
-      max-width: 1350px;
-      margin: auto;
-      /* border: 1px solid red; */
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-      width: 100%;
-      gap: 15px;
-      z-index: 1;
-    }
-
-    .review-cards>img {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      z-index: 1;
-    }
-
-    .review-cards img:hover {
-      transform: scale(1.1);
-      /* Adjust the scale factor for desired zoom level */
-    }
-
-    .review-img1 {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      /* border: 1px solid green; */
-    }
-
-    .review-img2 {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      height: 254px;
-    }
-
-    .review-img3 {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      margin-top: 20px;
-      /* border: 1px solid green; */
-    }
-
-    .review-img4 {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      height: 314px;
-      margin-top: 20px;
-    }
-
-    .review-img5,
-    .review-img6 {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      height: 254px;
-      margin-top: 20px;
-    }
-
-    #backgroundcolor {
-
-      padding-bottom: 120px;
-      padding-top: 50px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-
-    #h1 {
-      font-size: 40px;
-      color: rgb(255, 255, 255);
-      font-weight: 600;
-      line-height: 48px;
-      margin-bottom: 20px;
-
-    }
-
-    .firstp {
-      color: rgb(255, 255, 255);
-      width: 464px;
-      height: 120px;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: normal;
-      font-weight: 400;
-      margin-bottom: 24px;
-    }
-
-    #secimg {
-      width: 439px;
-      height: 442px;
-      border-radius: 30px;
-    }
-
-    #secfirstdiv {
-      display: inline-block;
-      border-radius: 16px;
-      background-color: white;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 36px;
-      padding-right: 36px;
-      position: absolute;
-      top: 50px;
-      left: -50px;
-      place-content: center;
-      place-items: center;
-      z-index: 1;
-    }
-
-    #secfirstdiv:hover {
-      transform: translateX(60px) scale(1.1);
-      transition: transform 0.7s ease;
-    }
-
-    #number {
-      color: rgb(0, 172, 168);
-      font-size: 40px;
-      font-weight: 900;
-      text-align: center;
-    }
-
-    #number2 {
-      color: rgb(240, 90, 44);
-      font-size: 40px;
-      font-weight: 900;
-      text-align: center;
-    }
-
-    #number3 {
-      color: rgb(101, 77, 160);
-      font-size: 40px;
-      font-weight: 900;
-      text-align: center;
-    }
-
-    #secseconddiv {
-      display: inline-block;
-      border-radius: 16px;
-      background-color: white;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 36px;
-      padding-right: 36px;
-      position: absolute;
-      top: 30px;
-      left: 320px;
-      z-index: 1;
-    }
-
-    #secseconddiv:hover {
-      transform: translateX(-45px) scale(1.1);
-      transition: transform 0.7s ease;
-    }
-
-    #secthirddiv {
-      display: inline-block;
-      border-radius: 16px;
-      background-color: white;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 40px;
-      padding-right: 40px;
-      position: absolute;
-      top: 380px;
-      left: 170px;
-      z-index: 1;
-    }
-
-    #secthirddiv:hover {
-      transform: translateY(-45px) scale(1.1);
-      transition: transform 0.7s ease;
-    }
-
-    .secone {
-      font-size: 16px;
-      font-weight: 600;
-      text-align: center;
-      color: #000000;
-    }
-
-    #position {
-      position: relative;
-    }
-
-    #title {
-      color: rgb(12, 20, 57);
-      font-size: 45px;
-      font-weight: 900;
-      margin-bottom: 60px;
-      text-align: center;
-    }
-
-    .box2 {
-      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-      height: auto;
-      width: 300px;
-      border-radius: 30px;
-      text-align: center;
-      padding-bottom: 30px;
-      overflow: hidden;
-      position: relative;
-      color: white;
-      padding: 14px;
-      background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-      z-index: 4;
-    }
-
-
-    .h2 {
-      font-size: 18px;
-      font-weight: 600;
-      margin-top: 15px;
-    }
-
-    .oneplaceimg {
-      width: 100%;
-      border-radius: 30px;
-
-    }
-
-    .oneplace {
-      display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 50px;
-    }
-
-    .oneplaceimg:hover {
-      transform: scale(1.11);
-      transition: transform 0.5s ease;
-    }
-
-    .box4 {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-
-    }
-
-    .box3 {
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      background-color: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-    }
-
-    i {
-      display: block;
-    }
-
-    #thirdimg {
-      width: 720px;
-      height: 385px;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-    }
-
-    #thirddiv {
-      width: 345px;
-      height: 385px;
-      background-color: rgb(203, 25, 119);
-      color: white;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-
-    }
-
-    .newsp {
-      font-size: 35px;
-      font-weight: 800;
-      color: white;
-      margin-top: 32px;
-      margin-bottom: 15px;
-      margin-left: 32px;
-      margin-right: 32px;
-    }
-
-    .newsp2 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-left: 32px;
-      color: white;
-      padding-bottom: 32px;
-    }
-
-    #fifth {
-      display: flex;
-      justify-content: center;
-      gap: 70px;
-      margin-bottom: 100px;
-    }
-
-    #sixth {
-      width: 1190px;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 80px;
-    }
-
-    #input3 {
-      color: white;
-      width: 500px;
-      font-size: 40px;
-      font-weight: 800;
-      margin-top: 100px;
-    }
-
-    #input1 {
-      box-sizing: border-box;
-      width: 420px;
-      height: 47px;
-      display: block;
-      border-radius: 8px;
-      border: none;
-      margin-top: 100px;
-      margin-bottom: 30px;
-      padding-left: 10px;
-    }
-
-    #input2 {
-      box-sizing: border-box;
-      width: 420px;
-      height: 47px;
-      display: block;
-      border-radius: 8px;
-      border: none;
-      margin-bottom: 30px;
-      padding-left: 10px;
-    }
-
-
-    button {
-      display: inline-block;
-      width: 250px;
-      height: 50px;
-      border-radius: 10px;
-      border: none;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.5s ease-in;
-      z-index: 1;
-    }
-
-    button::before,
-    button::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 0;
-      height: 100%;
-      transform: skew(15deg);
-      transition: all 0.7s;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    button::before {
-      left: -10px;
-      background: #240046;
-    }
-
-    button::after {
-      right: -10px;
-      background: #5a189a;
-    }
-
-    button:hover::before,
-    button:hover::after {
-      width: 58%;
-    }
-
-    button:hover span {
-      color: #e0aaff;
-      transition: 0.3s;
-    }
-
-    button span {
-      color: #03045e;
-      font-size: 18px;
-      transition: all 0.3s ease-in;
-    }
-
-    p {
-      font-size: 20px;
-    }
-
-    nav a {
-      color: orange;
-    }
-
-    #navlogo {
-      width: 130px;
-      height: 60px;
-      border-radius: 10px;
-      border: 2px solid white;
-
-    }
-
-    #flex5 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: black;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 30px;
-      z-index: 1000;
-      font-weight: 700;
-    }
-
-    .onea+div>div {
-      border: 1px solid white;
-      padding: 10px;
-    }
-
-    a {
-
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-
-    .onea>div:hover {
-      transform: scale(1.2);
-      transition: transform 0.5s ease;
-
-    }
-
-    .onea+div>div:hover {
-
-      transform: scale(1.2);
-      transition: transform 0.5s ease;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Navbar styles */
+        nav {
+            background-color: skyblue; 
+            height: 70px;
+            width: 100%;
+            position: fixed;
+           
+
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #212529; 
+            text-decoration: none;
+        }
+        
+        .navbar-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+      
+        .nav-link {
+            color: #212529; 
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background-color: #d1d1d1; 
+            border-radius: 4px;
+        }
+        
+       
+        .form-control {
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            padding: 8px;
+            margin-right: 10px;
+        }
+        
+        .btn-outline-success {
+            border-color: #28a745; 
+            color: #28a745; 
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-success:hover {
+            background-color: #28a745;
+            color: white;
+        }
+
+        article{
+          max-width: 1300px;
+          margin: auto;
+          padding-top: 50px;
+        }
+
+        article div.container{
+
+          display: grid;
+          grid-template-columns: repeat(2 , 1fr);
+
+          
+        }
+
+        .row{
+          max-width: 500px;
+        }
+
+        nav .container-fluid{
+          max-width: 1300px;
+          margin: auto;
+          height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: skyblue;
+            
+          
+        }
+
+        .navbar-collapse{
+          display: flex;
+          margin-left: 500px;
+          justify-content: space-between;
+          
+        }
+        div.logo_left {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+
+        div.logo_left img{
+          border-radius: 30px;
+          width: 40px;
+          height: 40px;
+        }
+        div.logo_left span{
+          background-image: linear-gradient(rgb(255, 0, 98), rgb(0, 179, 255));
+          background-clip: text;
+          
+          color: transparent;
+          font-size: 30px;
+          font-family: "Lobster", sans-serif;
+        }
+
+        @media (width <= 1250px) {
+
+          .navbar-collapse{
+          display: flex;
+          margin-left: 00px;
+          justify-content: space-between;
+          
+        }
+        }
+
+        
+    </style>
 </head>
-
 <body>
-  <header>
-    <nav>
-        <div class="container">
-            <div id="flex5">
-                <div><a href="./index.html" target="_blank"><img id="navlogo" src="./Apple.png" alt=""></a></div>
-                <div class="onea" style="display: flex; gap: 30px; margin-left: 100px;">
-                    <div class="hovera"><a href=""><span>Meetings</span></a></div>
-                    <div><a href="">Solutions</a></div>
-                    <div><a href="">Products</a></div>
-                    <div><a href="">Resources</a></div>
-                </div>
-                <div style="display: flex; gap: 20px;">
-                    <div><a href="./login.html">LOGIN</a></div>
-                    <div><a href="./register.html">SIGN UP</a></div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
 
-    <h1>
-      Apple Architecture is an event that brings together techies from around
-      the world, tailored for a region that's rapidly evolving.
-    </h1>
-    <h1>N E W S <span style="font-size: 15px"> & </span> U P D A T E S</h1>
-    <section class="container">
-      <div class="slider_wrapper">
-        <div class="slider">
-          <img id="slide1"
-            src="https://media.istockphoto.com/id/493958679/photo/audience-at-the-conference-hall.webp?b=1&s=170667a&w=0&k=20&c=U4q4HUxYhO9HRj-xU-C3UQdDyRvAQx_MYeQmkMSB-Mw="
-            alt="">
-          <img id="slide2"
-            src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uZmVyZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
-            alt="">
-          <img id="slide3"
-            src="https://media.istockphoto.com/id/1363104915/photo/presentation-in-multi-ethnic-office-conference-room-meeting-of-diverse-young-entrepreneurs.webp?b=1&s=170667a&w=0&k=20&c=yyFR2a8wtJJi9sCEl_ymgSRqNVBBqKzk5c6TewNVqN8="
-            alt="">
+  <nav>
+    <div class="container-fluid">
+        <div class="logo_left">
+          <img src="./assest/Apple.png" alt=""><span>Arcitacture</span>
         </div>
-        <div class="slider_nav">
-          <a href="#slide1"></a>
-          <a href="#slide2"></a>
-          <a href="#slide3"></a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Action</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-      </div>
-    </section>
-    <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns"
-      data-timezone="Asia/Kolkata" data-textcolor="#fffafa" data-date="2024-06-29 16:52" data-digitscolor="#ffffff"
-      data-unitscolor="#fffcfc">Countdown Timer</a>
-    <button type="submit" id="event">
-      <h2>Book Now</h2>
-    </button>
+    </div>
+</nav>
 
-
-  <section style="background-color:rgb(12, 20, 57);margin-top: 100px;">
+   <article>
     <div class="container">
-      <div id="backgroundcolor">
-        <div>
-          <h1 id="h1">What is Web Summit?</h1>
-          <p class="firstp">Politico has said we run “the world’s premier tech conference”, the Atlantic that
-            Web Summit is “where the future goes to be born”, and the New York Times that we assemble “a
-            grand conclave of the tech industry’s high priests”.</p>
-          <p class="firstp">At a time of great uncertainty for many industries and, indeed, the world itself,
-            we gather policymakers, heads of state, and the founders and CEOs of technology companies and
-            fast-growing startups, to ask a simple question: Where to next?</p>
-        </div>
-        <div id="position">
-          <img id="secimg"
-            src="https://websummit.com/wp-media/2023/11/opening-night-of-Web-Summit-2023-at-the-Altice-Arena-in-Lisbon-Portugal-768x489.jpg"
-            alt="websummit">
-          <div id="secfirstdiv">
-            <p id="number">70,000+</p>
-            <p class="secone">attendees</p>
+      <div class="row justify-content-sm-center">
+          <div class="col col-md-6" style="display: flex; margin-bottom: 20px;">
+              <div><img style="width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-right: 20px;" src="./assest/image copy 2.png" alt=""></div>
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Monika gaxe</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <p>3 month ago</p></h6>
+                      <p class="card-text">A review is judgement or discussion of the quality of something. Review also means to go over a subject again as part of study or to look at something another time.</p>
+                      <p class="card-text">A review is judgement or discussion of the quality of something. Review also means to go over a subject again as part of study or to look at something another time.</p>
+                  </div>
+              </div>
           </div>
-          <div id="secseconddiv">
-            <p id="number2">900+</p>
-            <p class="secone">investors</p>
+          <div class="col col-md-6" style="display: flex; margin-bottom: 20px;">
+              <div><img style="width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-right: 20px;" src="./assest/image copy 3.png" alt=""></div>
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Axite Sycin</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <p>2 month ago</p></h6>
+                      <p class="card-text">In the most glowing review, you may not include any dislikes. If the review is critical, try to find at least one positive to include, just to provide a break in between your incredible zings.</p>
+                      <p class="card-text">A review is judgement or discussion of the quality of something. Review also means to go over a subject again as part of study or to look at something another time.</p>
+                  </div>
+              </div>
           </div>
-          <div id="secthirddiv">
-            <p id="number3">2600+</p>
-            <p class="secone">startups</p>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
 
-  <section>
-    <div class="container">
-        <div id="gradient">
-            <div id="title">Meet Our First Speakers</div>
-        </div>
-        <div class="oneplace">
-            <div class="box2">
-                <a href="./applicants.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/88607ca35579df717357dbb33cf88305b319f794.png?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Brad Smith</p>
-                <p>President & Vice Chair</p>
-                <p>Microsoft</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="./applicant2.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/b8495f0fe3bdeb89ff1d653122dc57023720dbce.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Jessica Shibely</p>
-                <p>CEO</p>
-                <p>TIME</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="./applicants3.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/f170f3de3c474336558fdaa1ab44798a42f16ad9.jpg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Cristiano Amon</p>
-                <p>CEO & President</p>
-                <p>Microsoft</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="oneplace" style="margin-bottom: 50px;">
-            <div class="box2">
-                <a href="./applicant4.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/a8a0bdf1fc272003d98721d9f6e605e4765c18ee.png?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Deborah Archer</p>
-                <p>CEO</p>
-                <p>ACLU</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="./applicant5.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/63c03a0535b734f8ed2f078c828ccc3bafbdf736.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Hovanayesh Avoyan</p>
-                <p>Founder & CEO</p>
-                <p>Picsart</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="./applicant6.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/52e9943600761a1ea310a46cdd9b86f363c2daa5.png?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Jonathan Ross</p>
-                <p>Founder & CEO</p>
-                <p>Groq</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-        </div>
-        <div class="oneplace" style="margin-bottom: 100px;">
-            <div class="box2">
-                <a href="./applicant7.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/41aa7b2ea0ac44d477b5731d6d0a1ffc9d792f88.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Nick Thompson</p>
-                <p>CEO</p>
-                <p>The Atlantic</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="./applicant8.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/dc92f40eda0b707a9aed6bd295e388de27e76378.jpg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Toma Sabaliauskienė</p>
-                <p>CMO</p>
-                <p>Nord VPN</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-            <div class="box2">
-                <a href="./applicant9.html" target="_blank"><img class="oneplaceimg"
-                    src="https://web-summit-avenger.imgix.net/production/avatars/original/9b1ccf700b8632d9280a8c60e4d9d22e0813a4c1.jpeg?ixlib=rb-3.2.1&auto=format&fit=crop&crop=faces&w=300&h=300"
-                    alt=""></a>
-                <p class="h2">Ali Niknam</p>
-                <p>Founder & CEO</p>
-                <p>bunq</p>
-                <div class="box4">
-                    <div class="box3"><i class="fa-brands fa-facebook-f fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div>
-                    <div class="box3"><i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <div class="row justify-content-md-center row-lg-2">
+          <div class="col col-md-6" style="display: flex; margin-bottom: 20px;">
+              <div><img style="width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-right: 20px;" src="./assest/image copy 4.png" alt=""></div>
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Mazic Xesic</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <p>2 month ago</p></h6>
+                      <p class="card-text">A star rating may be the first thing most people see, but when folks skim your review, they’ll probably check the bottom for an idea of whether or not you’d recommend the meal,</p>
+                      <p class="card-text">A review is judgement or discussion of the quality of something. Review also means to go over a subject again as part of study or to look at something another time.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col col-md-6" style="display: flex; margin-bottom: 20px;">
+              <div><img style="width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-right: 20px;" src="./assest/image copy 5.png" alt=""></div>
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Suresh Adiga</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <p>A month ago</p></h6>
+                      <p class="card-text">I think this book would help other children to learn that trying new things can be scary, but sometimes when we try, we can find things that make us happy too. And this book will help others know that mistakes are okay and part of learning.</p>
+                      <p class="card-text">A review is judgement or discussion of the quality of something. Review also means to go over a subject again as part of study or to look at something another time.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-  <section>
-    <iframe style="border-radius: 30px; display:block; margin: auto; margin-bottom: 50px;position: relative;z-index: 1;"
-      width="1080" height="400" src="https://www.youtube.com/embed/lj2x7cyQrX4?si=th3yCcxMgu-R-8DE"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </section>
 
-  <section>
-    <div class="container">
-      <div style="display: flex; justify-content: center; margin-bottom: 40px; margin-top: 100px;z-index: 1;">
-        <div><img id="thirdimg" src="https://websummit.com/wp-media/2024/03/Web-Summit-centre-stage-with-crowd.png"
-            alt="">
-        </div>
-        <div id="thirddiv">
-          <p style="font-size: 35px; margin-top: 60px; margin-left: 40px; font-weight: 600;">“It defines the
-            ecosystem.”</p>
-          <p style="margin-left: 40px; margin-top: 20px; font-size: 19px;">The Guardian</p>
-        </div>
+      <div class="row justify-content-md-center row-lg-2">
+          <div class="col col-md-6" style="display: flex; margin-bottom: 20px;">
+              <div><img style="width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-right: 20px;" src="./assest/image copy 4.png" alt=""></div>
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Mazic Xesic</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <p>2 month ago</p></h6>
+                      <p class="card-text">A star rating may be the first thing most people see, but when folks skim your review, they’ll probably check the bottom for an idea of whether or not you’d recommend the meal,</p>
+                      <p class="card-text">A review is judgement or discussion of the quality of something. Review also means to go over a subject again as part of study or to look at something another time.</p>
+                  </div>
+              </div>
+          </div>
+         
       </div>
-    </div>
-  </section>
 
-  <section>
-    <div class="container">
-      <div id="fifth">
-        <div style="background-color: rgb(0,132,132); width: 496px; height: auto; border-radius: 5px;z-index: 1;">
-          <img style="width: 100%; height: 300px; border-top-left-radius: 5px;border-top-right-radius: 5px;"
-            src="https://websummit.com/wp-media/2023/07/Ayo-Tometti-Co-founder-Black-Lives-Matter-on-Centre-Stage-e1690393310785.jpg"
-            alt="">
-          <p class="newsp">“The giants of the web assemble.”</p>
-          <p class="newsp2">Wall Street Journal</p>
+      <div class="row justify-content-md-center row-lg-2">
+          <div class="col col-md-6" style="display: flex; margin-bottom: 20px;">
+              <div><img style="width: 40px; height: 40px; border-radius: 50%; margin-top: 20px; margin-right: 20px;" src="./assest/image copy.png" alt=""></div>
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Gyanic mix</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary"> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <span style="color: rgb(216, 191, 0);" class="material-symbols-outlined">star</span> <p>3 month ago</p></h6>
+                      <p class="card-text">Readers can gain knowledge of what it was like to work in New York City in the early 1900s. One of the things that was especially interesting was that there were no safety laws at work.</p>
+                      <p class="card-text">Also, there was a big contrast between the rich and the poor. Some people may not like this book because it is very depressing, but it is an important event in history to remember.</p>
+                  </div>
+              </div>
+          </div>
+         
         </div>
-        <div style="background-color: rgb(101,77,160); width: 496px; height: auto;border-radius: 5px;z-index: 1;">
-          <img style="width: 100%; height: 300px; border-top-left-radius: 5px;border-top-right-radius: 5px;"
-            src="https://websummit.com/wp-media/2024/03/Startup-presenting-on-Pitch-stage-at-Web-Summit.png" alt="">
-          <p class="newsp">“Europe’s biggest tech conference.”</p>
-          <p class="newsp2">Reuters</p>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <section style="background-color: rgb(12,20,57);z-index: 1;">
-    <div class="container">
-      <div id="sixth">
-        <div>
-          <p id="input3">Download the Tech Conference overview</p>
-        </div>
-        <div style="z-index: 3;">
-          <input type="text" name="input1" id="input1" placeholder="user@example.com" required>
-          <input type="text" name="input2" id="input2" placeholder="First name" required>
-          <button>
-            <span>Download Overview</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="review-cards">
-    <img class="review-img1"
-      src="https://www.devgadhvi10x.com/hosted/images/e5/afe0c8b01441bbaabd1dac857d1a79/image1.jpg" alt="reviews" />
-    <img class="review-img2"
-      src="https://www.devgadhvi10x.com/hosted/images/d9/71c24875a147b4b7b92541e62ed0bf/image2.jpg" alt="" />
-    <img class="review-img3"
-      src="https://www.devgadhvi10x.com/hosted/images/99/077312d0c04735957a42b0d925ac62/image3.jpg" alt="" />
-    <img class="review-img4"
-      src="https://www.devgadhvi10x.com/hosted/images/5c/da26c430464f308b5949fcb5a0b880/image4.jpg" alt="" />
-    <img class="review-img5"
-      src="https://www.devgadhvi10x.com/hosted/images/22/491b220ffe445c96e636d9f63d62d6/image6.jpg" alt="" />
-    <img class="review-img6"
-      src="https://www.devgadhvi10x.com/hosted/images/a1/673fa2fa6b441587304e41e0b2bdde/image5.jpg" alt="" />
-  </div>
-  <main>
-    <div class="container">
-      <h1>RELATED POSTS</h1>
-    </div>
-    <div id="mainflex">
-      <div class="card">
-        <img class="img3" src="https://godreamcast.com/blog/wp-content/uploads/2024/04/Thumbnail-MICE-events.jpg"
-          alt="" />
-        <p class="boxp">News & Update</p>
-        <p>
-          Upcoming MICE Events 2024: The Next-Gen of Events and Confrences
-        </p>
-      </div>
-      <div class="card">
-        <img class="img3" src="https://godreamcast.com/blog/wp-content/uploads/2024/03/Thumbnail-13.jpg" alt="" />
-        <p class="boxp">News & Update</p>
-        <p>
-          Upcoming World-Wide Pharmaceutical Conferences and Events in 2024
-        </p>
-      </div>
-      <div class="card">
-        <img class="img3" src="https://godreamcast.com/blog/wp-content/uploads/2024/03/Thumbnail-5.jpg" alt="" />
-        <p class="boxp">News & Update</p>
-        <p>
-          Explore Upcoming Real Estate Expos, Trade Shows, and Conferences in
-          Dubai &...
-        </p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div id="bgcolor">
-        <div id="flex">
-          <div>
-            <img id="img" src="./Apple.png" alt="logo" />
-            <p id="firstp">
-              Your Event Tech Partner Developing Technology To Meet All Your
-              Event Needs.
-            </p>
-            <div>
-              <img src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/iso-img.png" alt="" />
-            </div>
-          </div>
-          <div class="fonts">
-            <h3>Products</h3>
-            <div>Webinar+</div>
-            <div>Mixhub</div>
-            <div>Cashless</div>
-            <div>Mindmixer</div>
-          </div>
-          <div class="fonts">
-            <h3>Solutions</h3>
-            <div>Virtual Event</div>
-            <div>Hybrid Event</div>
-            <div>Live Streaming</div>
-            <div>In-person event</div>
-            <div>Smart Event Solution</div>
-            <div>Whatsapp Automation</div>
-          </div>
-          <div class="fonts">
-            <h3>Resources</h3>
-            <div>Blog</div>
-            <div>Success Story</div>
-            <div>E-Book</div>
-            <div>Support</div>
-          </div>
-          <div class="fonts">
-            <h3>Company</h3>
-            <div>About us</div>
-            <div>Career</div>
-            <div>Contact us</div>
-          </div>
-          <div class="fonts">
-            <h3>Connect With Us</h3>
-            <div>Book A Demo</div>
-            <div>contact@godreamcast.com</div>
-          </div>
-        </div>
-        <div id="line2"></div>
-        <div id="flex2">
-          <div style="font-size: small">
-            ©2024, Applecast Inc. All Rights Reserved.
-          </div>
-          <div id="flex4" style="font-size: small">
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Cookie Policy</p>
-            <p>Refund Policy</p>
-            <p>GDPR</p>
-          </div>
-          <div id="flex3">
-            <div>
-              <img class="img2"
-                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/footer-icon.svg" alt="" />
-            </div>
-            <div>
-              <img class="img2"
-                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/twitter-icon.svg" alt="" />
-            </div>
-            <div>
-              <img class="img2"
-                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/insta-icon.svg" alt="" />
-            </div>
-            <div>
-              <img class="img2"
-                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/linkdin-icon.svg" alt="" />
-            </div>
-            <div>
-              <img class="img2"
-                src="https://godreamcast.com/blog/wp-content/themes/contentberg-child/images/youtube-icon.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-</body>
-
-</html>
+   </article>
+  
+  </body>
+  </html>
+  

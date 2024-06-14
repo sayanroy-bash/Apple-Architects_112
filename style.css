@@ -71,9 +71,9 @@ header #event:hover {
   transform: scale(1.5);
   transition: transform 0.5s ease-in;
 }
-header a {
+/* header a {
   z-index: 3;
-}
+} */
 
 @keyframes slide {
   0% {
@@ -126,9 +126,9 @@ header a {
   transform: translateX(-50%);
   z-index: 10;
 }
-.slider_wrapper .slider_nav a {
+/* .slider_wrapper .slider_nav a {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: #fff;
-}/*# sourceMappingURL=style.css.map */
+} */
