@@ -23,6 +23,7 @@ head {
   display: block;
   font-size: 52px;
   color: transparent;
+  margin: 0;
 }
 
 head::before,
@@ -37,28 +38,29 @@ body::after {
   content: ".";
   mix-blend-mode: screen;
   animation: 44s -27s move infinite ease-in-out alternate;
+  z-index: -1;
 }
 
 body::before {
-  @include dots(40);
+  @include dots(20);
   animation-duration: 44s;
   animation-delay: -27s;
 }
 
 body::after {
-  @include dots(40);
+  @include dots(20);
   animation-duration: 43s;
   animation-delay: -32s;
 }
 
 head::before {
-  @include dots(40);
+  @include dots(20);
   animation-duration: 42s;
   animation-delay: -23s;
 }
 
 head::after {
-  @include dots(40);
+  @include dots(20);
   animation-duration: 41s;
   animation-delay: -19s;
 }
@@ -135,6 +137,7 @@ body>section:nth-of-type(1){
   } 
 }
 @media (0px <= width <= 853px) {
+  
   .onea a{
     display: none;
   }
