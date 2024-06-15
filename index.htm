@@ -10,11 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="style1.css" />
   <style>
-    body{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+   
     body h1 {
       color: aliceblue;
       text-align: center;
@@ -432,8 +428,9 @@
       top: 0;
       left: 5vw;
       width: 90vw;
+      right: 5vw;
       height: 150px;
-      background-color: none;
+      background: linear-gradient(0.5turn, #123, #ebf8e148, #f69c3c00);
       color: white;
       display: flex;
       justify-content: space-between;
@@ -517,7 +514,7 @@
         </div>
       </div>
     </section>
-    <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns"
+    <a href="https://logwork.com/countdown-f7ub" class="countdown-timer" data-style="columns"
       data-timezone="Asia/Kolkata" data-textcolor="#fffafa" data-date="2024-06-29 16:52" data-digitscolor="#ffffff"
       data-unitscolor="#fffcfc">Countdown Timer</a>
     <button type="submit" id="event">
@@ -881,6 +878,45 @@
     </div>
   </footer>
   <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.slider');
+      const slides = document.querySelectorAll('.slider img');
+      let currentIndex = 0;
+      const intervalTime = 3000; // Adjust this value to change the auto-scroll interval (in milliseconds)
+  
+      const scrollToSlide = (index) => {
+        slider.scrollTo({
+          left: slider.offsetWidth * index,
+          behavior: 'smooth'
+        });
+      };
+  
+      const autoScroll = () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        scrollToSlide(currentIndex);
+      };
+  
+      let autoScrollInterval = setInterval(autoScroll, intervalTime);
+  
+      slider.addEventListener('mouseover', () => {
+        clearInterval(autoScrollInterval);
+      });
+  
+      slider.addEventListener('mouseout', () => {
+        autoScrollInterval = setInterval(autoScroll, intervalTime);
+      });
+  
+      document.querySelectorAll('.slider_nav a').forEach((nav, index) => {
+        nav.addEventListener('click', (e) => {
+          e.preventDefault();
+          currentIndex = index;
+          scrollToSlide(index);
+        });
+      });
+    });
+  </script>
+  
 </body>
 
 </html>
