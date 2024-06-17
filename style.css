@@ -1,0 +1,135 @@
+html {
+  font: 5vmin/1.3 Serif;
+  overflow: scroll;
+  background: #123;
+}
+
+body,
+head {
+  display: block;
+  font-size: 52px;
+  color: transparent;
+  margin: 0;
+}
+
+head::before,
+head::after,
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: ".";
+  mix-blend-mode: screen;
+  animation: 44s -27s move infinite ease-in-out alternate;
+  z-index: -1;
+}
+
+body::before {
+  text-shadow: 0.6588609062em -0.3847314116em 5px hsl(111.2743009021, 100%, 50%), 1.5923325855em -0.0305222865em 5px hsl(172.5020402978, 100%, 50%), 1.6806505593em 0.6525701176em 5px hsl(143.0511650009, 100%, 50%), 2.3839114709em 0.7189148603em 5px hsl(248.1766969228, 100%, 50%), 1.2075072366em 1.1989160868em 5px hsl(297.9479665904, 100%, 50%), 0.7532314647em 1.6603752395em 5px hsl(309.1318432472, 100%, 50%), 0.1533805117em 0.5664558584em 5px hsl(234.5056109516, 100%, 50%), 0.2971992704em 0.4134386841em 5px hsl(309.8883033342, 100%, 50%), 2.1251360574em -0.0155833666em 5px hsl(347.6954945685, 100%, 50%), 0.2643858034em 0.8242737457em 5px hsl(231.4729033721, 100%, 50%), -0.2176153173em 2.0671988981em 5px hsl(151.3042480001, 100%, 50%), 0.7401752896em -0.2198790009em 5px hsl(349.9062478154, 100%, 50%), -0.0028726682em 0.759015939em 5px hsl(157.3429806182, 100%, 50%), 0.0137639707em 0.065380497em 5px hsl(122.3692546102, 100%, 50%), 0.6514558869em -0.3113820031em 5px hsl(306.1414863777, 100%, 50%), 0.9139109939em 0.0581922141em 5px hsl(212.4160516339, 100%, 50%), 0.7716345175em 0.8090061828em 5px hsl(329.8080216245, 100%, 50%), 1.3828210164em -0.4252864249em 5px hsl(290.6057771267, 100%, 50%), 1.9226974339em 1.3810273268em 5px hsl(163.1180956178, 100%, 50%), 1.6054837864em 2.1798519413em 5px hsl(308.3255287708, 100%, 50%), -0.2394376409em 0.9110739377em 5px hsl(343.804461577, 100%, 50%);
+  animation-duration: 44s;
+  animation-delay: -27s;
+}
+
+body::after {
+  text-shadow: 1.9718794123em 1.6285314369em 5px hsl(270.9078164242, 100%, 50%), 1.1499565753em 0.0155668513em 5px hsl(255.565684565, 100%, 50%), 2.0498210003em 2.0153640731em 5px hsl(335.1571603962, 100%, 50%), -0.1825708841em 0.2330708967em 5px hsl(21.0407568305, 100%, 50%), 0.3859599175em 1.654689651em 5px hsl(14.8179372632, 100%, 50%), 0.1091076937em 1.1939994087em 5px hsl(184.4747025358, 100%, 50%), 2.1636155633em 1.0860598933em 5px hsl(87.0659788288, 100%, 50%), 1.1091051828em 0.1966710908em 5px hsl(134.7752493112, 100%, 50%), 0.4195356967em 1.619590156em 5px hsl(30.8422680474, 100%, 50%), 2.068077258em 0.8889460754em 5px hsl(28.5049607049, 100%, 50%), 0.1750370348em 0.0387730068em 5px hsl(141.4960294822, 100%, 50%), 1.0797788422em 2.326325563em 5px hsl(307.8428653879, 100%, 50%), 1.4995805641em 1.9045377039em 5px hsl(260.3184643983, 100%, 50%), 2.2385835464em 1.8960819051em 5px hsl(90.9790447557, 100%, 50%), 0.2451093318em 1.113799678em 5px hsl(40.6586694917, 100%, 50%), 1.7545934914em 1.3715697274em 5px hsl(33.2594897638, 100%, 50%), 1.4075660112em -0.4264761091em 5px hsl(200.7404350527, 100%, 50%), 0.9364255477em 2.2902698883em 5px hsl(74.1743070242, 100%, 50%), 0.6226641611em 0.95146563em 5px hsl(32.5258054752, 100%, 50%), 1.0968513108em 1.4504763685em 5px hsl(89.6987802125, 100%, 50%), 0.5231925756em 2.241168799em 5px hsl(190.7616329386, 100%, 50%);
+  animation-duration: 43s;
+  animation-delay: -32s;
+}
+
+head::before {
+  text-shadow: 1.8868954375em 0.2884870318em 5px hsl(164.787754641, 100%, 50%), 0.5796758229em 1.4067657754em 5px hsl(243.1687827129, 100%, 50%), 1.3000610803em 0.1405766064em 5px hsl(343.6514578542, 100%, 50%), 0.0980542703em 2.1710063732em 5px hsl(0.4373852533, 100%, 50%), 0.4444164157em -0.1342892722em 5px hsl(50.176080697, 100%, 50%), 0.7426031845em 2.3324816414em 5px hsl(296.6675642813, 100%, 50%), 1.4107039575em 1.754472027em 5px hsl(359.0325426556, 100%, 50%), 2.0487383245em 0.7900060231em 5px hsl(355.7551701389, 100%, 50%), 0.5365499704em -0.0360727863em 5px hsl(298.3897306491, 100%, 50%), 2.3643921723em 1.302158615em 5px hsl(160.1551341725, 100%, 50%), 0.9951794226em 0.5463888595em 5px hsl(334.3137414502, 100%, 50%), 0.4643174057em 0.0796327198em 5px hsl(322.8280817744, 100%, 50%), 0.0575339731em 2.0319323792em 5px hsl(26.755266366, 100%, 50%), -0.4414027435em 0.7450551338em 5px hsl(105.1847855288, 100%, 50%), -0.1062055807em 1.7842134224em 5px hsl(339.1436607612, 100%, 50%), 1.5944620988em 0.5249479109em 5px hsl(347.8293831501, 100%, 50%), 0.935852237em 1.0264802197em 5px hsl(335.3542366004, 100%, 50%), 1.5634365774em 1.0172354715em 5px hsl(11.1866661043, 100%, 50%), 0.1928134229em 0.6613243967em 5px hsl(26.8631298101, 100%, 50%), 0.2378557831em 1.4041418651em 5px hsl(348.7828041809, 100%, 50%), 0.3714751231em 2.2467978041em 5px hsl(214.4045542694, 100%, 50%);
+  animation-duration: 42s;
+  animation-delay: -23s;
+}
+
+head::after {
+  text-shadow: 1.6175097348em -0.4700867815em 5px hsl(23.4296601128, 100%, 50%), -0.3781500716em 2.1228105199em 5px hsl(226.7334990388, 100%, 50%), 1.1502587603em 1.2906776813em 5px hsl(87.1760915398, 100%, 50%), 0.434363216em 0.2326043725em 5px hsl(204.4092554503, 100%, 50%), 1.7924491488em -0.3787572338em 5px hsl(227.3759397154, 100%, 50%), 2.4398328008em 0.543174747em 5px hsl(345.0000717291, 100%, 50%), 2.360641126em 1.8570329367em 5px hsl(33.5084367237, 100%, 50%), 2.4358637842em 1.3995058452em 5px hsl(311.2602934983, 100%, 50%), 1.6283413622em 1.9454424573em 5px hsl(129.0900097601, 100%, 50%), 1.247220678em 0.2071901372em 5px hsl(139.9190808209, 100%, 50%), 2.2465139403em 1.7111527476em 5px hsl(354.563899067, 100%, 50%), 1.0219242889em 1.1119021016em 5px hsl(32.5867419585, 100%, 50%), 1.6427674859em -0.2152324705em 5px hsl(201.6758594263, 100%, 50%), 1.3394761251em 1.3426713552em 5px hsl(260.968711286, 100%, 50%), 1.8017787497em 1.0147886231em 5px hsl(93.4652865368, 100%, 50%), 1.5624343485em 2.3942280199em 5px hsl(4.8455866825, 100%, 50%), 1.0270318274em -0.0264686365em 5px hsl(292.4062041201, 100%, 50%), 1.8090769535em 1.2666203773em 5px hsl(94.1349821359, 100%, 50%), 0.13799091em -0.3720323466em 5px hsl(115.7769055157, 100%, 50%), 2.4153475619em -0.4288006995em 5px hsl(238.4716990836, 100%, 50%), 0.8930266556em 0.0315104528em 5px hsl(95.7564120777, 100%, 50%);
+  animation-duration: 41s;
+  animation-delay: -19s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
+body > section:nth-of-type(1) button#event {
+  z-index: 1;
+  border: none;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  border-radius: 5px;
+}
+body > section:nth-of-type(1) #event:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s ease-in;
+}
+body > section:nth-of-type(1) a {
+  z-index: 3;
+}
+
+/* .container {
+  width: 500px;
+} */
+
+.slider_wrapper {
+  position: relative;
+  max-width: 28rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider_wrapper .slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.slider_wrapper .slider::-webkit-scrollbar {
+  display: none;
+}
+.slider_wrapper .slider img {
+  display: block;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.slider_wrapper .slider_nav {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.slider_wrapper .slider_nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+@media (0px <= width <= 853px) {
+  .onea a {
+    display: none;
+  }
+  .review-cards img {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
